@@ -1,21 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@use '_variables.scss' as var;
 
-:root {
-    //background color
-    $primary-bg: #F5F5F5;
-    $secondary-bg: #F8F8F8;
-
-    //font
-    $font-bold: #393E45;
-    $font-regular: #7A7B84;
-
-    //nav link fonts
-    $font-nav: #808189;
-
-    //button
-    $button-primary: #191A23;
-    $button-accent: #0B14FB;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -23,6 +8,31 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+button {
     font-family: 'Inter', sans-serif;
 }
+
+body {
+    background-color: var.$primary-bg;
+}
+
+.btn {
+    font-size: 1.125rem;
+    line-height: 1.67;
+    font-weight: 600;
+    border-style: none;
+    color: white;
+    border-radius: 1.5em;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.15625;
+    color: var.$font-bold;
+}
+
+//hero section
+@import "_hero-section.scss";
