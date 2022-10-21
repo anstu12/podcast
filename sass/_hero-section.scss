@@ -66,3 +66,57 @@ header {
 .hero-right {
     grid-area: 2 / 2 / 4 / 3;
 }
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    &--1 {
+        background-color: var.$button-primary;
+        padding: 14px 30px;
+    }
+
+    &--2 {
+        background-color: var.$secondary-bg;
+        color: var.$button-primary;
+        border: 1px solid var.$button-accent;
+        padding: 14px 40px;
+    }
+}
+
+.rect {
+    background-color: var.$img-acc;
+    border-top-left-radius: 200px;
+    position: relative;
+}
+
+.hero-obj {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    display: grid;
+}
+
+.img-filler-text-top,
+.img-filler-text-bottom {
+    background-color: white;
+}
+
+.hero-content {
+    color: var.$font-bold;
+
+    &--large {
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 1.45;
+    }
+
+    &--small {
+        font-size: 1.125rem;
+        line-height: 1.67;
+    }
+}
